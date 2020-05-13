@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7 ]> <html class="ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="lt-ie9" lang="en"> <![endif]-->
+<!--[if IE 9 ]>    <html class="lt-ie10" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--> <html lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PERCEÇÃO</title>
+  <link href="css/foundation.css" rel="stylesheet" type="text/css" />
+  <link href="css/twentytwenty-no-compass.css" rel="stylesheet" type="text/css" />
+</head>
+  <body>
+
+    <div class="row" style="margin-top: 2em;">
+      <div class="large-4 columns">
+        <h3>Iluminado</h3>
+        <p>A maioria das substâncias estupefacientes alteram a perceção das pessoas, deixando o seu campo visual facilmente perturbado e com uma maior sensibilidade à luz.</p>
+      </div>
+      <div class="large-8 columns">
+        <div class="twentytwenty-container">
+          <img src="img/1_1.jpg" />
+          <img src="img/1_2.jpg" />
+        </div>
+      </div>
+    </div>
+
+    <div class="row" style="margin-top: 2em; margin-bottom: 2em;">
+      <div class="large-4 columns">
+        <h3>Não ter os pés no chão</h3>
+        <p>Sensação de estar a voar, não se sentir com os pés assentes, sentir o corpo mole, a deambular.</p>
+      </div>
+      <div class="large-8 columns">
+        <div class="twentytwenty-container" data-orientation="vertical">
+          <img src="img/2_1.jpg" />
+          <img src="img/2_2.jpg" />
+        </div>
+      </div>
+    </div>
+
+    <div class="row" style="margin-top: 2em;">
+      <div class="large-4 columns">
+        <h3>Culto do eu</h3>
+        <p>A droga manipula-te e tu nao vês mais nada à tua volta, apenas sabes que tu existes, não sentes a presença de mais ninguém. O teu vício é essa droga ou esse telemóvel?</p>
+      </div>
+      <div class="large-8 columns">
+        <div class="twentytwenty-container">
+          <img src="img/ui_snap_0.jpg" />
+          <img src="img/ui_snap_1.jpg" />
+        </div>
+      </div>
+    </div>
+
+    <div class="row" style="margin-top: 2em;">
+      <div class="large-4 columns">
+        <h3>Manipulação</h3>
+        <p>Conceito: Como se as pessoas fossem peças de xadrez, ficam vulneráveis nas mãos de outras pessoas quando estão sob o efeito de drogas. Há as que manipulam e aproveitam-se de quem está sob essa condição física e psicológica e há os que são manipulados.</p>
+      </div>
+      <div class="large-8 columns">
+        <div class="twentytwenty-container">
+          <img src="img/chess_0.jpg" />
+          <img src="img/chess_1.jpg" />
+        </div>
+      </div>
+    </div>
+
+    <div class="row" style="margin-top: 2em; margin-bottom: 2em;">
+      <div class="large-4 columns">
+        <h3>Decadencia</h3>
+        <p>Espelho meu, espelho meu, haverá alguám mais gorda do que eu?</p>
+      </div>
+      <div class="large-8 columns">
+        <div class="twentytwenty-container">
+          <img src=".jpg" />
+          <img src=".jpg" />
+        </div>
+      </div>
+    </div>
+
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script src="js/jquery.event.move.js"></script>
+    <script src="js/jquery.twentytwenty.js"></script>
+    <script>
+    $(window).load(function(){
+      $(".twentytwenty-container[data-orientation!='vertical']").twentytwenty({default_offset_pct: 0.7});
+      $(".twentytwenty-container[data-orientation='vertical']").twentytwenty({default_offset_pct: 0.3, orientation: 'vertical'});
+    });
+    </script>
+  </body>
+</html>
